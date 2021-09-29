@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+/* ------------ Global ------------- */
+html, body {
+    margin: 0;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+a {
+    display: inline-block;
+    text-decoration:none;
+    color: #49439C;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+     /* theme color */
+    --text-gray:#3f4954;
+    --text-light:#777C92;
+    --bg-color:#0f0f0f;
+    --midnight:#104f55;
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+
+
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-gray {
+      color: var(--text-gray);
+  }
+
+  .text-light {
+    color: var(--text-light);
+    font-weight: 100;
+
+  }
+
+
+/* -----x------ Global ------x------ */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:  hsl(0, 0%, 95%);
+    min-height: 100vh;
+    align-items: center;
+    padding: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card {
+    display: flex;
+    color: var(--Very-light-gray);
+    min-height: 500px;
+    border-radius: .5em;
+    overflow: hidden;
+    justify-content: center;
+
+
+}
+
+.card >div {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    padding:45px;
+}
+
+.card h1 {
+    font-size: 2.5em;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.card p {
+    line-height: 25px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    max-width: 200px;
+
+}
+
+.link-button {
+    padding: 10px 20px  ;
+    background-color: var(--Very-light-gray);
+    border-radius: 2em;
+    width:145px ;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid var(--Very-light-gray) ;
+
+
+}
+
+div.sedan {
+    background-color: var(--Bright-orange);
+}
+
+div.suv {
+    background-color: var(--Dark-cyan);
+}
+
+div.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+.sedan a {
+    color: var(--Bright-orange);
+}
+.suv a {
+    color: var(--Dark-cyan);
+}
+.luxury a {
+    color: var(--Very-dark-cyan);
+}
+
+.link-button:hover {
+    background-color: transparent;
+    color: var(--Very-light-gray);
+}
+
+/* --------responsive------- */
+
+@media only screen and (max-width:800px) {
+    .card {
+        flex-wrap: wrap;  
+    }
+    .card p {
+        max-width: 100%;
+    }
+}
